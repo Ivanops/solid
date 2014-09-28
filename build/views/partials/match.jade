@@ -1,0 +1,212 @@
+div.header
+    button(style="float: right;", ng-click="translate()") {{translated.translate}}
+div.statistic-container
+    div.actions
+        div.match-score
+            div.table
+                div.cell {{matchScore.we}}
+        div.match-score
+            div.table
+                div.cell -
+        div.match-score
+            div.table
+                div.cell {{matchScore.them}}
+        button.team-error(ng-click="teamError()") {{translated.errorTeam}}
+        div.message
+            div.table
+                div.cell {{translated.players}}
+        div(ng-repeat="player in team")
+            button.number-card(ng-click="changePlayer(player.number)") {{player.number}}
+    div.card
+        div.number
+            div.table
+                div.cell {{showPlayer.number}}
+        div.name
+            div.table
+                div.cell {{showPlayer.name}}
+        div.totals
+            div.table
+                div.cell {{translated.total}}
+        div.spikes
+            button.buttons.point(ng-click="addSpikePoint()") {{translated.spikePoint}}
+                div.score
+                    div.table
+                        div.cell {{showPlayer.spike.point}}
+            button.buttons.normal(ng-click="addSpikeNormal()") {{translated.spikeNormal}}
+                div.score
+                    div.table
+                        div.cell {{showPlayer.spike.normal}}
+            button.buttons.error(ng-click="addSpikeError()") {{translated.spikeError}}
+                div.score
+                    div.table
+                        div.cell {{showPlayer.spike.error}}
+            div.totals
+                div.results
+                    div.table
+                        div.cell {{showPlayer.spike.total.pos}}
+                div.icon
+                    div.table
+                        div.cellicon %
+                div.results-bad
+                    div.table
+                        div.cell {{showPlayer.spike.total.neg}}
+                div.icon
+                    div.table
+                        div.cellicon %
+        div.blocks
+            button.buttons.point(ng-click="addBlockPoint()") {{translated.blockPoint}}
+                div.score
+                    div.table
+                        div.cell {{showPlayer.block.point}}
+            button.buttons.normal(ng-click="addBlockNormal()") {{translated.blockNormal}}
+                div.score
+                    div.table
+                        div.cell {{showPlayer.block.normal}}
+            button.buttons.error(ng-click="addBlockError()") {{translated.blockError}}
+                div.score
+                    div.table
+                        div.cell {{showPlayer.block.error}}
+            div.totals
+                div.results
+                    div.table
+                        div.cell {{showPlayer.block.total.pos}}
+                div.icon
+                    div.table
+                        div.cellicon %
+                div.results-bad
+                    div.table
+                        div.cell {{showPlayer.block.total.neg}}
+                div.icon
+                    div.table
+                        div.cellicon %
+        div.services
+            button.buttons.point(ng-click="addServicePoint()") {{translated.servicePoint}}
+                div.score
+                    div.table
+                        div.cell  {{showPlayer.service.point}}
+
+            button.buttons.normal(ng-click="addServiceNormal()") {{translated.serviceNormal}}
+                div.score
+                    div.table
+                        div.cell {{showPlayer.service.normal}}
+
+            button.buttons.error(ng-click="addServiceError()") {{translated.serviceError}}
+                div.score
+                    div.table
+                        div.cell  {{showPlayer.service.error}}
+
+            div.totals
+                div.results
+                    div.table
+                        div.cell  {{showPlayer.service.total.pos}}
+
+                div.icon
+                    div.table
+                        div.cellicon  %
+
+                div.results-bad
+                    div.table
+                        div.cell {{showPlayer.service.total.neg}}
+
+                div.icon
+                    div.table
+                        div.cellicon  %
+
+        div.sets
+            button.buttons.perfects(ng-click="addSetPerfect()") {{translated.setPerfect}}
+                div.score
+                    div.table
+                        div.cell  {{showPlayer.set.perfect}}
+
+            button.buttons.normal(ng-click="addSetNormal()") {{translated.setNormal}}
+                div.score
+                    div.table
+                        div.cell {{showPlayer.set.normal}}
+
+            button.buttons.error(ng-click="addSetError()") {{translated.setError}}
+                div.score
+                    div.table
+                        div.cell {{showPlayer.set.error}}
+
+            div.totals
+                div.results
+                    div.table
+                        div.cell {{showPlayer.set.total.pos}}
+
+                div.icon
+                    div.table
+                        div.cellicon %
+
+                div.results-bad
+                    div.table
+                        div.cell  {{showPlayer.set.total.neg}}
+
+                div.icon
+                    div.table
+                        div.cellicon %
+
+        div.passes
+            button.buttons.perfects(ng-click="addPassPerfect()") {{translated.passPerfect}}
+                div.score
+                    div.table
+                        div.cell {{showPlayer.pass.perfect}}
+
+            button.buttons.normal(ng-click="addPassNormal()") {{translated.passNormal}}
+                div.score
+                    div.table
+                        div.cell {{showPlayer.pass.normal}}
+
+            button.buttons.error(ng-click="addPassError()") {{translated.passError}}
+                div.score
+                    div.table
+                        div.cell  {{showPlayer.pass.error}}
+
+            div.totals
+                div.results
+                    div.table
+                        div.cell {{showPlayer.pass.total.pos}}
+
+                div.icon
+                    div.table
+                        div.cellicon %
+
+                div.results-bad
+                    div.table
+                        div.cell  {{showPlayer.pass.total.neg}}
+
+                div.icon
+                    div.table
+                        div.cellicon  %
+
+        div.digs
+            button.buttons.perfects(ng-click="addDigPerfect()") {{translated.digPerfect}}
+                div.score
+                    div.table
+                        div.cell  {{showPlayer.dig.perfect}}
+
+            button.buttons.normal(ng-click="addDigNormal()") {{translated.digNormal}}
+                div.score
+                    div.table
+                        div.cell {{showPlayer.dig.normal}}
+
+            button.buttons.error(ng-click="addDigError()") {{translated.digError}}
+                div.score
+                    div.table
+                        div.cell {{showPlayer.dig.error}}
+
+            div.totals
+                div.results
+                    div.table
+                        div.cell {{showPlayer.dig.total.pos}}
+
+                div.icon
+                    div.table
+                        div.cellicon %
+
+                div.results-bad
+                    div.table
+                        div.cell {{showPlayer.dig.total.neg}}
+
+                div.icon
+                    div.table
+                        div.cellicon %

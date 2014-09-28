@@ -1,0 +1,8 @@
+
+div.header
+    button(style="float: right;", ng-click="translate()") {{translated.translate}}
+div.body
+    div.button-container
+        div.title Hello {{name}}
+        button.my-button(ng-click="createTeam()") {{translated.newTeam}}
+        button.my-button(ng-click="startMatch()") {{translated.startMatch}}

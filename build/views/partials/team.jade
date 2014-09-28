@@ -1,0 +1,21 @@
+
+div.header
+    button(style="float: right;", ng-click="translate()") {{translated.translate}}
+div.body
+    div.button-container
+        div.span {{translated.playerNumber}}
+        input.input(ng-model="number", placeholder="18")
+        div.span {{translated.playerName}}
+        input.input(ng-model="playerName", placeholder="Murillo Endres")
+        button.add-button(ng-click="addPlayer()") {{translated.add}}
+        button.add-button(ng-click="doneTeam()") {{translated.done}}
+        button.back-button(ng-click="back()") {{translated.back}}
+div.team-container
+    div(ng-repeat="player in players")
+        div.player-card
+            div.number-shirt
+                div.table
+                    div.cell {{player.number}}
+            div.name-player
+                div.table
+                    div.cell {{player.name}}

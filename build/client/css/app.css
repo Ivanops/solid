@@ -1,0 +1,361 @@
+html, body{
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'trebuchet ms', verdana, arial;
+    font-size: 12px;
+    text-align: center;
+}
+
+.app-container{
+    height: 100%;
+    background-color: blue;
+    text-align: center;
+    overflow-y: auto;
+}
+.header {
+
+    height: 45px;
+    background-color: cornflowerblue;
+}
+
+.span {
+
+    margin-top: 5px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.title {
+
+    margin-top: 25px;
+    color: white;
+    font-size: 25px;
+}
+.body {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+.button-container {
+
+    width: 250px;
+    height: 300px;
+}
+.input {
+
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.my-button {
+
+    width: 200px;
+    height: 80px;
+    border: 1px solid black;
+    background-color: blue;
+    margin-top: 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.add-button{
+
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: blue;
+    margin-top: 25px;
+    border-radius: 5px;
+    font-size: 10px;
+    color: white;
+}
+.add-button:hover{
+
+    background-color: darkblue;
+}
+
+.my-button:hover {
+
+    background-color: darkblue;
+}
+
+.back-button{
+
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: blue;
+    margin-top: 25px;
+    margin-right: 25px;
+    border-radius: 5px;
+    font-size: 10px;
+    color: white;
+    float: right;
+}
+
+.back-button:hover{
+
+    background-color: darkblue;
+}
+
+.player-card {
+
+    float: left;
+    width: 200px;
+    height: 50px;
+    margin: 25px 0 0 25px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: white;
+    overflow: hidden;
+}
+
+.number-shirt {
+
+    width: 50px;
+    background-color: cadetblue;
+    height: 100%;
+    float: left;
+}
+
+.name-player {
+
+    width: 150px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+.table{
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+.cell{
+    width: 100%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.back{
+
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+.results{
+
+    float: left;
+    background-color: green;
+    width: 60px;
+    height: 40px;
+    color: #ffffff;
+    border-radius: 20px;
+    margin: 10px 0 0 10px;
+}
+.results-bad{
+
+    float: left;
+    background-color: red;
+    width: 60px;
+    height: 40px;
+    color: #ffffff;
+    border-radius: 20px;
+    margin: 10px 0 0 10px;
+}
+.totals{
+
+    text-align: center;
+    width: 230px;
+    height: 60px;
+    margin: 5px 0 0 5px;
+    background-color: cadetblue;
+    float: left;
+    border: 0;
+    color: white;
+    font-size: 20px;
+}
+
+.statistic-container{
+
+    width: 980px;
+    height: 460px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.actions{
+
+    width: 230px;
+    height: 460px;
+    float: left;
+}
+.card{
+
+    width: 750px;
+    height: 460px;
+    float: left;
+    background-color: #444;
+    color: #ffffff;
+}
+.number{
+    text-align: center;
+    width: 165px;
+    height: 60px;
+    margin: 5px 0 0 5px;
+    background-color: #285e8e;
+    float: left;
+    border: 0;
+    font-size: 20px;
+    color: white;
+    overflow: hidden;
+}
+.name{
+    text-align: center;
+    width: 335px;
+    height: 60px;
+    margin: 5px 0 0 5px;
+    background-color: #285e8e;
+    float: left;
+    border: 0;
+    font-size: 20px;
+    color: white;
+    overflow: hidden;
+}
+.buttons{
+
+    width: 165px;
+    height: 60px;
+    margin: 5px 0 0 5px;
+    float: left;
+    border: 0;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 13px;
+}
+.point{
+
+    background-color: forestgreen;
+}
+.point:hover{
+    background-color: darkolivegreen;
+}
+.normal{
+    background-color: gray;
+}
+
+.normal:hover{
+
+    background-color: dimgray;
+}
+.error{
+    background-color: #ac2925;
+}
+.error:hover{
+    background-color: darkred;
+}
+.perfects{
+    color: #000000;
+    background-color: #ffff00;
+}
+.perfects:hover{
+    color: #000000;
+    background-color: greenyellow;
+}
+.icon{
+    background-color: #245269;
+    width: 30px;
+    height: 30px;
+    float: left;
+    color: #ffffff;
+    border-radius: 10px;
+    margin: 15px 0 0 10px;
+}
+.score{
+    background-color: darkblue;
+    width: 40px;
+    height: 40px;
+    float: right;
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.table{
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+.cell{
+    width: 100%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.cellicon{
+    width: 100%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.number-card{
+
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin: 5px 0 0 5px;
+    background-color: blueviolet;
+    float: left;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    overflow: hidden;
+}
+.number-card:hover{
+
+    background-color: mediumslateblue;
+}
+.team-error{
+
+    text-align: center;
+    width: 215px;
+    height: 70px;
+    margin: 5px 0 0 5px;
+    background-color: orangered;
+    float: left;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    overflow: hidden;
+}
+
+.match-score{
+
+    width: 75px;
+    height: 50px;
+    float: left;
+    background-color: blue;
+    font-size: 40px;
+    color: white;
+    overflow: hidden;
+}
+.message{
+
+    width: 215px;
+    height: 50px;
+    float: left;
+    font-size: 20px;
+    color: #ffffff;
+}
